@@ -8,46 +8,66 @@ redirect_from:
 
 {% include base_path %}
 
-Download [CV](http://fmh1art.github.io/files/CV_ZeJIANG.pdf)
+Summary
 ======
+Ph.D. student in Computer Science at Renmin University of China, focusing on **LLM-powered data agents**, **reinforcement learning**, and **post-training for open-source LLMs**. My research centers on building **cost-effective and reliable agentic systems** for data-intensive tasks such as data preparation, entity resolution, and autonomous data science. More broadly, I am interested in developing lightweight agents with stronger **data awareness** to optimize deep research workflows, reduce expensive trial-and-error, and improve the practical efficiency of LLM-based systems.
 
 Education
 ======
-* B.Eng. in Environmental Engineering, Hohai University, Nanjing, China, 2012
-* M.Sc. in Hydro-Informatics and Water Management, Partnership of five European Universities, 2015
-* Ph.D. in Water Resources Engineering, University of New South Wales, Sydney, Australia, 2021
+* **Renmin University of China**, Beijing, China
+  * Ph.D. in Computer Application Technology (Sept 2023 - Expected June 2028)
+  * Honors: National Scholarship (The only 2nd-year Ph.D. recipient in the college)
+  * Advisor: Prof. Ju Fan / Prof. Xiaoyong Du
 
-Research Interests
-======
-* Hydro-climate extremes modelling and forecasting (e.g. Wavelet System Prediction)
-* Postprocessing techniques for correcting bias in climate and weather prediction models
-* Climate change impact on the water cycle (e.g. floods and droughts)
-* Hydrology/Hydraulics and water quality modelling
-* Hydro-Informatics and water management
+* **Chongqing Jiaotong University**, Chongqing, China
+  * B.S. in Computer Science and Technology (Sept 2019 - June 2023)
+  * GPA: 4.31/5.00
+  * Honors: National Scholarship (The only recipient in the college), Mingde Scholarship Nomination Award (Top 20 in the university)
 
-Research Highlights
+Experience
 ======
-* Development of [spectral transformation](https://doi.org/10.1029/2019WR026962) and its [application](https://doi.org/10.1016/j.jhydrol.2021.126816) in hydroclimate extremes modelling and forecasting
-* An [open-source tool](https://cran.r-project.org/web/packages/WASP/index.html) for improved system modelling: [Wavelet System Prediction (WASP)](https://doi.org/10.1016/j.envsoft.2020.104907)
-* Development of a [postprocessing method](https://doi.org/10.1175/MWR-D-22-0217.1) for correcting bias in Numerical Weather Predictions in the time-frequency domain
-* Quantification of future changes in [drought](https://doi.org/10.1029/2022EF003350) and [agricultural production](https://doi.org/10.1007/s00704-018-2617-z) under global warming
-* Development of [index-based drought insurance](https://doi.org/10.1108/AFR-02-2020-0020) for disaster risk transfer
+* **ByteDance**, Beijing, China
+  * Research Intern (LLM Data Agent Systems) (March 2025 - March 2026)
+  * Led the research and development of **DeepPrep**, an **LLM-powered data agent** system for autonomous data preparation.
+  * Proposed a **tree-based agentic reasoning** mechanism impacting reliability and steerability.
+  * Designed a **progressive post-training** framework combining SFT and multi-turn RL.
+  * Built large-scale benchmarks and achieved strong performance at up to **15x lower inference cost**.
 
-Grants & Fellowships
-======
-* 2024-26, **Australian Research Council Industry Fellowship (Early Career)**  ($308K AUD, Chief Investigator), ARC and WaterNSW. Title: A Decadal Roadmap for Water Security and Resource Management.
-* 2023-24, **Global Research and Innovation Partnerships (GRIP)** (~$20K AUD, Chief Investigator), UNSW GLOBAL DIVISION. Title: Index-based Insurance for Agriculture Risk Transfer under a Changing Climate. 
-* 2023, **Helmholtz Visiting Researcher Grant** (~$20K EUR, Chief Investigator), Helmholtz Association of German Research Centers. Title: A novel method to estimate flood extremes using spectrally transformed climate information.
+* **Renmin University of China**, Beijing, China
+  * Research Assistant (Sept 2023 - Present)
+  * Led research on **AutoPrep**, a multi-agent data preparation framework.
+  * Studied **cost-effective LLM inference** for entity resolution and proposed the **BATCHER** framework.
+  * Co-authored research on autonomous data agents, text-to-SQL, and data-centric LLM systems.
 
-Professional Experience
+Projects
 ======
-* Jun. 2021 - Current: Research Associate
-  * Water Research Centre, University of New South Wales, Sydney, Australia
-  * Duties included: 
-	+ The development of Wavelet System Prediction (WASP) for characterizing chaotic system
-    + Hydro-climatological forecasting using CMIP decadal and ACCESS seasonal forecasts
-    + Interannual rainfall forecasting with CMIP6 decadal projections over Australia
-    + Bias characterisation and correction in Numerical Weather Prediction (NWP) models
+* **DeepPrep: Data Agent System for Autonomous Data Preparation** (March 2025 - March 2026)
+  * Developed an execution-grounded environment supporting 31 data preparation operators.
+  * Implemented a full post-training pipeline for open-source LLMs (0.5B to 14B).
+  * [GitHub](https://anonymous.4open.science/r/DeepPrep-0432)
+
+* **AutoPrep: Multi-Agent Data Preparation Framework** (2024 - 2025)
+  * Designed a planner agent with Chain-of-Clauses reasoning.
+  * Developed programmer agents with tool-augmented code generation.
+  * [GitHub](https://github.com/ruc-datalab/AutoPrep)
+
+* **BATCHER: Cost-Effective LLM Inference for Entity Resolution** (2023 - 2024)
+  * Introduced a batch prompting framework with demonstration selection.
+  * Achieved 4x-7x cost savings over standard prompting.
+  * [GitHub](https://github.com/fmh1art/BatchER)
+
+Honors and Awards
+======
+* **National Scholarship (Ph.D.)**, Ministry of Education, China (2025)
+* **National Scholarship (B.S.)**, Ministry of Education, China (2023)
+* **Mingde Scholarship Nomination Award**, Chongqing Jiaotong University (2023)
+
+Skills & Research Interests
+======
+* **Research Interests:** Data Agents, Reinforcement Learning for LLM Agents, Post-Training, Cost-Efficient LLM Systems, Autonomous Data Science, Text-to-SQL
+* **Programming & Tools:** Python, LaTeX
+* **LLM & Agent Systems:** Agentic Reasoning, Multi-Agent Systems, Supervised Fine-Tuning (SFT), Multi-turn RL, Prompt Engineering, Execution-Grounded Feedback
+* **Data Systems:** Data Preparation, Entity Resolution, Data Integration, Analytical Workflows
   * Supervisors: Prof. [Ashish Sharma](https://scholar.google.com.au/citations?user=C_9ndbcAAAAJ&hl=en) and A/Prof. [Fiona Johnson](https://scholar.google.com.au/citations?user=PYu5v4YAAAAJ&hl=en)
 
 * Aug. 2023 - Current: Guest Scientist

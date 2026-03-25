@@ -1,12 +1,11 @@
 ---
-title: "Reward-SQL: Boosting Text-to-SQL via Stepwise Reasoning and Process-Supervised Rewards"
+title: "Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards"
 collection: publications
 permalink: /publication/2024-06-10-paper-RewardSQL
 excerpt: 'This paper proposes Reward-SQL, a framework for improving Text-to-SQL reasoning using process-supervised reward models.'
-date: 2025-05-04
-venue: ''
-paperurl: 'https://arxiv.org/pdf/2505.04671'
-citation: 'Zhang, Yuxin, Meihao Fan, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, and Guoliang Li. "Reward-sql: Boosting text-to-sql via stepwise reasoning and process-supervised rewards." arXiv preprint arXiv:2505.04671 (2025).'
+date: 2026-06-01
+venue: 'SIGMOD 2026 (Accepted)'
+citation: 'Yuxin Zhang, Meihao Fan, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li. "Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards." SIGMOD 2026 (Accepted).'
 ---
 This paper proposes Reward-SQL, a framework for improving Text-to-SQL reasoning using process-supervised reward models.
 
