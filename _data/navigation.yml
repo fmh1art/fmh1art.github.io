@@ -4,7 +4,7 @@ main:
     url: /
 
   - title: "CV"
-    url: /cv/
+    url: /fmh_cv.pdf
 
   - title: "Publications"
     url: /publications/
