@@ -20,16 +20,25 @@ My research focuses on **LLM-powered data agents**, **reinforcement learning**, 
 
 - **Meihao Fan**, Ju Fan, Yuxin Zhang, Shaolei Zhang, Xiaoyong Du, Jie Song, Peng Li, Fuxin Jiang, Tieying Zhang, Jianjun Chen:
   DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation.
-  **VLDB 2026** (Under Review).
-- **Meihao Fan**, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du:
-  AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework.
-  **VLDB 2025** (Accepted).
-- **Meihao Fan**, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du:
-  Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration.
-  **ICDE 2024** (Accepted).
+  **VLDB 2026** (Under Review). [[paper](/files/DeepPrep.pdf)] [[slides](/files/DeepPrep-slides.pptx)]
+- Chao Deng, Ju Fan, Yuyu Luo, Qinliang Xue, **Meihao Fan**, Yuxin Zhang, Min Zhang, Xiaofeng Jia, Jing Zhang, Xiaoyong Du:
+  TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries.
+  **VLDB 2026** (Accepted). [[paper](/files/TACO.pdf)] [[slides](/files/TACO-slides.pptx)]
+- Anonymous Authors (incl. **Meihao Fan**):
+  DeepAnalyze: Agentic Large Language Models for Autonomous Data Science.
+  **ICML 2026** (Under Review). [[paper](/files/DeepAnalyze.pdf)] [[slides](/files/DeepAnalyze-slides.pptx)]
+- Anonymous Authors (incl. **Meihao Fan**):
+  CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?
+  **ICML 2026** (Under Review). [[paper](/files/CODA-BENCH.pdf)] [[slides](/files/CODA-BENCH-slides.pptx)]
 - Yuxin Zhang, **Meihao Fan**, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li:
   Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards.
-  **SIGMOD 2026** (Accepted).
+  **SIGMOD 2026** (Accepted). [[paper](/files/RewardSQL.pdf)] [[slides](/files/RewardSQL-slides.pptx)]
+- **Meihao Fan**, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du:
+  AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework.
+  **VLDB 2025** (Accepted). [[paper](/files/AutoPrep.pdf)] [[slides](/files/AutoPrep-slides.pptx)]
+- **Meihao Fan**, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du:
+  Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration.
+  **ICDE 2024** (Accepted). [[paper](/files/BatchER-ICDE2024.pdf)] [[slides](/files/BatchER-slides.pptx)]
 
 ## Experience
 
