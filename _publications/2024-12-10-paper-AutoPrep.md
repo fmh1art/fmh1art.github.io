@@ -1,13 +1,16 @@
 ---
-title: "AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework"
+title: 'AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework'
 collection: publications
 permalink: /publication/2024-12-10-paper-AutoPrep
-excerpt: 'This paper proposes AutoPrep, a multi-agent framework for data preparation.'
+excerpt: This paper proposes AutoPrep, a multi-agent framework for data preparation.
 date: 2025-08-01
-venue: 'VLDB 2025 (Accepted)'
-paperurl: 'https://arxiv.org/abs/2412.10422'
-citation: 'Meihao Fan, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du. "AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework." VLDB 2025 (Accepted).'
+venue: VLDB 2025
+paperurl: https://www.vldb.org/pvldb/vol18/p3504-fan.pdf
+citation: 'Meihao Fan, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du. "AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework" VLDB 2025.'
 ---
-This paper proposes AutoPrep, a multi-agent framework for data preparation.
 
-[Download paper here](https://arxiv.org/abs/2412.10422)
+**Meihao Fan**, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du
+
+**VLDB 2025**
+
+[Paper](https://www.vldb.org/pvldb/vol18/p3504-fan.pdf)

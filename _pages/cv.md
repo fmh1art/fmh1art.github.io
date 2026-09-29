@@ -1,155 +1,115 @@
 ---
 layout: archive
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+[Download CV (PDF)](/fmh_cv.pdf)
 
-Summary
-======
-Ph.D. student in Computer Science at Renmin University of China, focusing on **LLM-powered data agents**, **reinforcement learning**, and **post-training for open-source LLMs**. My research centers on building **cost-effective and reliable agentic systems** for data-intensive tasks such as data preparation, entity resolution, and autonomous data science. More broadly, I am interested in developing lightweight agents with stronger **data awareness** to optimize deep research workflows, reduce expensive trial-and-error, and improve the practical efficiency of LLM-based systems.
+## Research Summary
 
-Education
-======
-* **Renmin University of China**, Beijing, China
-  * Ph.D. in Computer Application Technology (Sept 2023 - Expected June 2028)
-  * Honors: National Scholarship (The only 2nd-year Ph.D. recipient in the college)
-  * Advisor: Prof. Ju Fan / Prof. Xiaoyong Du
+Ph.D. student at Renmin University of China researching **scalable data synthesis for agent training**. I develop methods for **task generation, interaction-trajectory synthesis, and execution-based data verification**, and use the resulting data for curriculum learning and multi-turn reinforcement learning. My work connects data construction to measurable improvements in agent capability and generalization. I am extending this research to **embodied data curation, action-conditioned world models, and evaluation-driven data evolution**.
 
-* **Chongqing Jiaotong University**, Chongqing, China
-  * B.S. in Computer Science and Technology (Sept 2019 - June 2023)
-  * GPA: 4.31/5.00
-  * Honors: National Scholarship (The only recipient in the college), Mingde Scholarship Nomination Award (Top 20 in the university)
+I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, world models, and multimodal agents.
 
-Experience
-======
-* **ByteDance**, Beijing, China
-  * Research Intern (LLM Data Agent Systems) (March 2025 - March 2026)
-  * Led the research and development of **DeepPrep**, an **LLM-powered data agent** system for autonomous data preparation.
-  * Proposed a **tree-based agentic reasoning** mechanism impacting reliability and steerability.
-  * Designed a **progressive post-training** framework combining SFT and multi-turn RL.
-  * Built large-scale benchmarks and achieved strong performance at up to **15x lower inference cost**.
+## Education
 
-* **Renmin University of China**, Beijing, China
-  * Research Assistant (Sept 2023 - Present)
-  * Led research on **AutoPrep**, a multi-agent data preparation framework.
-  * Studied **cost-effective LLM inference** for entity resolution and proposed the **BATCHER** framework.
-  * Co-authored research on autonomous data agents, text-to-SQL, and data-centric LLM systems.
+- **Renmin University of China**, Beijing, China — Sept 2023 – Expected June 2028
+  - Ph.D. in Computer Application Technology; advisors: Prof. Ju Fan and Prof. Xiaoyong Du.
+  - National Scholarship (2025): the college's only second-year Ph.D. recipient.
+- **Chongqing Jiaotong University**, Chongqing, China — Sept 2019 – June 2023
+  - B.S. in Computer Science and Technology; GPA: 4.31/5.00.
+  - National Scholarship (2023): the college's only recipient; Mingde Scholarship Nomination Award (university top 20).
 
-Projects
-======
-* **DeepPrep: Data Agent System for Autonomous Data Preparation** (March 2025 - March 2026)
-  * Developed an execution-grounded environment supporting 31 data preparation operators.
-  * Implemented a full post-training pipeline for open-source LLMs (0.5B to 14B).
-  * [GitHub](https://anonymous.4open.science/r/DeepPrep-0432)
+## Research Experience
 
-* **AutoPrep: Multi-Agent Data Preparation Framework** (2024 - 2025)
-  * Designed a planner agent with Chain-of-Clauses reasoning.
-  * Developed programmer agents with tool-augmented code generation.
-  * [GitHub](https://github.com/ruc-datalab/AutoPrep)
+- **EvoPhys**, Beijing, China — Research Intern, World Models — Sept 2026 – Present
+  - Lead research on world model training, spanning interactive-memory evaluation, scalable multimodal data annotation, and evaluation-driven recursive self-improvement (RSI).
+- **ByteDance**, Beijing, China — Research Intern, LLM Agent Systems & Reinforcement Learning — March 2025 – June 2026
+  - Led DeepPrep, covering synthetic training tasks, an executable data-preparation environment, and progressive SFT/RL; led research on agent harness self-evolution from execution trajectories.
+- **Renmin University of China**, Beijing, China — Research Assistant — Sept 2023 – March 2025
+  - Led AutoPrep and BATCHER research on task-aware data preparation, multi-agent orchestration, demonstration selection, and cost-efficient LLM inference.
 
-* **BATCHER: Cost-Effective LLM Inference for Entity Resolution** (2023 - 2024)
-  * Introduced a batch prompting framework with demonstration selection.
-  * Achieved 4x-7x cost savings over standard prompting.
-  * [GitHub](https://github.com/fmh1art/BatchER)
+## Research Projects
 
-Honors and Awards
-======
-* **National Scholarship (Ph.D.)**, Ministry of Education, China (2025)
-* **National Scholarship (B.S.)**, Ministry of Education, China (2023)
-* **Mingde Scholarship Nomination Award**, Chongqing Jiaotong University (2023)
+### DeepAnalyze: Scalable Training-Trajectory Synthesis
 
-Skills & Research Interests
-======
-* **Research Interests:** Data Agents, Reinforcement Learning for LLM Agents, Post-Training, Cost-Efficient LLM Systems, Autonomous Data Science, Text-to-SQL
-* **Programming & Tools:** Python, LaTeX
-* **LLM & Agent Systems:** Agentic Reasoning, Multi-Agent Systems, Supervised Fine-Tuning (SFT), Multi-turn RL, Prompt Engineering, Execution-Grounded Feedback
-* **Data Systems:** Data Preparation, Entity Resolution, Data Integration, Analytical Workflows
-  * Supervisors: Prof. [Ashish Sharma](https://scholar.google.com.au/citations?user=C_9ndbcAAAAJ&hl=en) and A/Prof. [Fiona Johnson](https://scholar.google.com.au/citations?user=PYu5v4YAAAAJ&hl=en)
+**ICML 2026** · Project Lead | Synthetic data, quality filtering, curriculum learning, agentic RL
 
-* Aug. 2023 - Current: Guest Scientist
-* May 2023 - Jul. 2023: Scientist
-  * Helmholtz-Centre Potsdam - German Research Centre (GFZ), Potsdam, Brandenburg, Germany
-  * Duties included: 
-	+ Climate-informed Flood Frequency Analysis under a changing climate
-  * Supervisor: Prof. Dr. [Bruno Merz](https://www.gfz-potsdam.de/en/staff/bruno.merz/sec44)
+- Developed **data-grounded trajectory synthesis** for DeepAnalyze-8B, combining teacher-distilled reasoning and environment-generated interactions in the **DataScience-Instruct-500K** training corpus.
+- Built a **questioner–solver–inspector** pipeline: generate tasks and acceptance criteria from real data, execute multi-turn solutions, and filter trajectories using interaction checks and resulting environment changes.
+- Implemented a curriculum from single-skill SFT to multi-skill cold-start training and **GRPO**, using approximately 470K, 20K, and 15K samples, respectively.
+- Evaluated on **12 benchmarks**; achieved **38.88% on DABStep** and **61.7% on DS-1000**, versus 15.34% and 54.8% for the single-ability training variant.
 
-* Nov. 2015 - Feb. 2018: Research Assistant/Engineer
-  * Tropical Marine Science Institute, National University of Singapore, Singapore
-  * Duties included: 
-	+ DSSAT crop modeling of future rice yield in Vietnam under climate change, Singapore-MIT Alliance project.
-	+ Development of index-based drought insurance for sovereign disaster risk transfer, International Finance Corporation, World Bank project. 
-	+ Impact of climate change on inland and coastal flooding in Singapore, Public Utilities Board (PUB) project.
-	+ Effectiveness of ABC Waters design features in residential developments, PUB-TMSI-Monash University project.
-  * Supervisor: Prof. [Shie-Yui Liong](https://scholar.google.com.au/citations?user=PvpaEVUAAAAJ&hl=en)
+### DeepPrep: Verifiable Task Synthesis for Agent Training
 
-* Mar. 2015 - Sep. 2015: Intern
-  * Ingenieurgesellschaft Prof. Dr. Sieker mbH, Berlin, Germany
-  * Duties included:
-    + Development of the Time-Area function model based on QGIS environment for stormwater management.
-    + Flood modelling and mitigation of Hafar Al-Batin city in Saudi Arabia.   
-  * Supervisors: Prof. [Frank Molkenthin](https://www.b-tu.de/fg-hydrologie/team/mitarbeiter/apl-prof-frank-molkenthin) and Prof. [Heiko Sieker](https://www.sieker.de/aktuelles/news/heiko-sieker-honorarprofessor-an-der-tu-berlin-143.html?no_cache=1)
+**VLDB 2026** · Project Lead; First Author | Executable supervision, reversible corruption, multi-turn RL
 
-Awards & Honors
-======
-* 2021, Faculty of Engineering Postdoctoral Writing Fellowship funded by UNSW
-* 2019, OzEWEX Summer Institute Scholarship
-* 2018, University International Postgraduate Award (UIPA) funded by UNSW
-* 2013, Erasmus Mundus Scholarship Award by European Union (EU)
-* 2012, Outstanding graduate of Hohai University, Nanjing
-* 2010, National Undergraduate Mathematical Contest in Modeling (Provincial Award)
+- Designed a synthesis method that converts SQL workloads into **source tables, target specifications, and executable pipelines**; adds **reversible noise** and verifies recovery to preserve task solvability.
+- Constructed **6,788 training tasks**, with pipelines spanning **31 operator types** and up to **28 steps**; trained agents through operator-level SFT, verified reasoning trajectories, and GRPO with hybrid rewards.
+- Synthetic training data improved **out-of-domain accuracy by 37.0 percentage points** over Parrot training on Synth-Bird (Qwen3-8B, data ablation); tree-based execution supports backtracking and pipeline repair.
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
- 
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Languages
-======
-Mandarin(Native), English(Fluent), German(Basic), French(Basic)
+### Interactive Memory & Recursive Self-Improvement (RSI) for World Models
 
-Skills & Expertise 
-======
-* Statistical hydrology and water resource engineering.
-* Strong interpersonal skills with a good sense of teamwork. 
-* Programming Skills: R, C/C++, and Python in both Unix and Windows systems.
-* Rich experience in modeling and GIS, using MIKE, SWMM, DSSAT, and QGIS.
+**Ongoing** · Project Lead | World model evaluation, scalable data curation, training, self-improvement
 
-Service & Leadership
-======
-* Contribute to the First/Second Order Draft of IPCC 6th Assessment Report (FOD-WGII-AR6 and SOD-WGI-AR6) as a group reviewer
-* AOGS2024 Hydrological Sciences Session main convener: [Statistical Methods in Assessing Hydroclimate Extremes Under Changing Climate](https://www.asiaoceania.org/aogs2024/public.asp?page=sessions_and_conveners.asp)
-* International Conference on Hydroinformatics (HIC2024) main convener: [SS10 Climate Change Impacts on Urban Flooding: Challenges and Innovative Solutions](https://hic2024.scimeeting.cn/en/web/program/1661?class=13512&hall_id=0&date_id=0&is_satellite=0)
-* Topic Coordinator for a [Special Issue of Frontiers in Marine Science](https://www.frontiersin.org/research-topics/46827/toxicological-endpoints-and-bioavailability-of-emerging-contaminants-and-their-impacts-on-marine-nut)
-* Reviewer Editor: 
-  + Frontiers in Water (Sections: Water and Climate; Water and Hydrocomplexity)
-* Reviewer for Scholarly Journals: 
-  + Journal of Hydrology, Environmental Modelling & Software, and Weather and Climate Extremes
-  + International Journal of River Basin Management 
-  + Journal of Applied Meteorology and Climatology
-  + Frontiers in Water; Water; Sustainability; International Journal of Environmental Research and Public Health
+- Proposed an **interactive-memory benchmark for action-conditioned world models**, formalizing memory through **Encoding, Maintain, Update, and Read** and evaluating reactive response, memory persistence, and memory plasticity across temporal-retention and interference settings.
+- Built an automated **Isaac Sim** evaluation pipeline with programmatically generated cases and ground-truth state supervision; reproduced and evaluated **nine representative world models**, including Ctrl-World, WorldMem, iVideoGPT, HyDRA, and Oasis, under a unified evaluation protocol.
+- Built a **fully automated multimodal annotation system** for world-model training, covering atomic action segmentation, semantic and object-interaction labels, object-state changes, camera pose, and 3D hand motion; supports **100+ videos concurrently** at approximately **$40 API cost per raw video hour**, with annotation quality validated through manual audits.
+- Developing a **Recursive Self-Improvement** pipeline linking data annotation, training-recipe construction, distributed training, evaluation, and recipe refinement; uses model weaknesses to drive hard-example mining, curriculum construction, active data selection, and data-mixture optimization.
 
-Membership
-======
-* American Geophysical Union (AGU)
-* European Geosciences Union (EGU) 
-* Asia Oceania Geosciences Society (AOGS)
-* International Union of Geodesy and Geophysics (IUGG)
-* International Commission of Statistical Hydrology (ICSH-IAHS)
-* Modeling and Simulation Society of Australia and New Zealand (MSSANZ)
+### CoDA-Bench & TACO: Scalable, Verifiable Task Construction
+
+**ICML / VLDB 2026** · Co-author | Task synthesis, execution verification, difficulty refinement
+
+- **CoDA-Bench:** Co-authored a benchmark of **1,009 tasks across 31 data communities**, built from executable notebook solutions through task reconstruction, adversarial refinement, and human verification.
+- **TACO:** Co-authored a benchmark combining **1,500 expert-annotated** and **13,000 synthetic** NL–SQL pairs, using query-structure sampling, schema-constrained generation, and quality checks.
+
+### EvoCost & SkillAdam: Agent Self-Evolution
+
+**ICLR 2027 submissions** · EvoCost: Lead, First Author | SkillAdam: Co-author
+
+- **EvoCost:** Developed harness evolution that mines avoidable interactions from trajectory dependency graphs and validates updates to instructions, skills, tools, and executor logic with a fixed backbone model.
+- **SkillAdam:** Co-authored skill optimization with persistent issue memory and adaptive edit budgets; reduced optimization tokens by **67.3%** versus SkillOpt on DeepPlanning, with test accuracy improving from 21.7% to 28.3%.
+
+### AutoPrep & BATCHER: Task-Aware Data Preparation
+
+**VLDB 2025 / ICDE 2024** · Project Lead; First Author | Data transformation, demonstration selection, inference efficiency
+
+- **AutoPrep:** Developed Chain-of-Clauses planning and tool-augmented execution; improved NL2SQL accuracy by **12.22 / 13.23 points** on WikiTQ / TabFact, averaged across evaluated backbones.
+- **BATCHER:** Developed coverage-based demonstration selection and token-aware batch allocation; batch prompting reduced API cost by **4–7×** versus standard prompting across eight ER datasets.
+
+## Publications
+
+- **Meihao Fan**, Ju Fan, Yuxin Zhang, Shaolei Zhang, Xiaoyong Du, Jie Song, Peng Li, Fuxin Jiang, Tieying Zhang, Jianjun Chen. DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation **VLDB 2026**. [Paper](https://www.vldb.org/pvldb/vol19/p3371-fan.pdf)
+
+- **Meihao Fan**, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du. AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework **VLDB 2025**. [Paper](https://www.vldb.org/pvldb/vol18/p3504-fan.pdf)
+
+- **Meihao Fan**, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du. Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration **ICDE 2024**. [Paper](https://fmh1art.github.io/files/BatchER-ICDE2024.pdf)
+
+- Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science **ICML 2026**. [Paper](https://arxiv.org/abs/2510.16872) | [Code](https://github.com/ruc-datalab/DeepAnalyze)
+
+- Yuxin Zhang, **Meihao Fan**, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li. Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards **SIGMOD 2026**. [Paper](https://arxiv.org/abs/2505.04671)
+
+- Yuxin Zhang, Ju Fan, **Meihao Fan**, Shaolei Zhang, Xiaoyong Du. CoDA-Bench: Can Code Agents Handle Data-Intensive Tasks? **ICML 2026**. [Paper](https://arxiv.org/abs/2606.15300)
+
+- Chao Deng, Ju Fan, Yuyu Luo, Qinliang Xue, **Meihao Fan**, Yuxin Zhang, Min Zhang, Xiaofeng Jia, Jing Zhang, Xiaoyong Du. TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries **VLDB 2026**. [Paper](https://arxiv.org/abs/2606.14201)
+
+## Manuscripts
+
+- **Meihao Fan**, Shaolei Zhang, Ju Fan, Peng Li, Jie Song, Jianjun Chen. EvoCost: Harness Self-Evolution for Cost-Efficient LLM Agents **Under Review at ICLR 2027**.
+
+- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) | [Code](https://github.com/ruc-datalab/SkillAdam)
+
+- Yuxin Zhang, Ju Fan, **Meihao Fan**, Shaolei Zhang, ... Multi-Agent World: Scaling Multi-Agent Orchestration Training via Recursive Environment Improvement **Under Review at ICLR 2027**.
+
+## Technical Skills & Research Interests
+
+- **Data:** Task and trajectory synthesis, execution-based verification, quality filtering, demonstration selection.
+- **Training:** Supervised fine-tuning, GRPO, multi-turn RL, curriculum learning, reward modeling.
+- **Tools:** Python, PyTorch, Transformers, vLLM.
+- **Languages:** Chinese (native), English (professional).
+- **Research interests:** Synthetic data for agents; embodied data; world models; multimodal agents; self-improving systems.

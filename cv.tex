@@ -1,313 +1,272 @@
-%Academic CV LaTeX Template
-% Author: Dubasi Pavan Kumar
-% License: MIT
-%
+% Meihao Fan | Research internship CV | September 2026
+% Compile: pdflatex Meihao_Fan_CV_Data_Synthesis_2027.tex
+% Employment dates and project leadership follow the candidate's supplied CV.
+% Project dates are omitted where the timing of the final paper is uncertain.
+% SkillAdam bibliographic information follows the September 2026 public preprint.
+% ICLR 2027 submission statuses are candidate-provided.
 
-\documentclass[a4paper,11pt]{article}
-
-% Package imports
-\usepackage{latexsym}
-\usepackage{xcolor}
-\usepackage{float}
-\usepackage{ragged2e}
-\usepackage[empty]{fullpage}
-\usepackage{wrapfig}
-\usepackage{lipsum}
-\usepackage{tabularx}
-\usepackage{titlesec}
-\usepackage{geometry}
-\usepackage{marvosym}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{cfr-lm}
+\documentclass[a4paper,10pt]{article}
 \usepackage[T1]{fontenc}
-\usepackage{fontawesome5}
+\usepackage{mathpazo}
+\usepackage[margin=1.45cm,top=1.15cm,bottom=1.25cm]{geometry}
+\usepackage{xcolor,enumitem,titlesec,tabularx,fancyhdr,microtype,needspace}
+\usepackage[colorlinks=true,urlcolor=navy,linkcolor=navy]{hyperref}
 
-% Color definitions
-\definecolor{darkblue}{RGB}{0,0,139}
-
-% Page layout
-\setlength{\multicolsep}{0pt} 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-\setlength{\footskip}{5pt} % Addressing fancyhdr warning
-
-% Hyperlink setup
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=darkblue,
-    filecolor=darkblue,
-    urlcolor=darkblue,
-}
-
-% Custom box settings
-\usepackage[most]{tcolorbox}
-\tcbset{
-    frame code={},
-    center title,
-    left=0pt,
-    right=0pt,
-    top=0pt,
-    bottom=0pt,
-    colback=gray!20,
-    colframe=white,
-    width=\dimexpr\textwidth\relax,
-    enlarge left by=-2mm,
-    boxsep=4pt,
-    arc=0pt,outer arc=0pt,
-}
-
-% URL style
+\definecolor{navy}{RGB}{24,49,78}
+\definecolor{muted}{RGB}{75,82,90}
 \urlstyle{same}
 
-% Text alignment
-\raggedright
-\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1.4em}
 
-% Section formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\scriptsize\color{muted}Meihao Fan\quad |\quad Research Internship, Summer 2027}
+\fancyfoot[R]{\scriptsize\color{muted}\thepage}
+\setlength{\footskip}{16pt}
 
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item{
-    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
-  }
+\titleformat{\section}{\color{navy}\large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\setlist[itemize]{
+  leftmargin=12pt,
+  label=\textbullet,
+  itemsep=1.5pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
 }
 
-\newcommand{\resumeSubheading}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#4}} \\
-        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
-    \end{tabular*}
-    \vspace{-2.4mm}
+\newcommand{\entry}[4]{%
+  \needspace{3\baselineskip}
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{#1} & {\small #2}\\
+  {\small #3} & {\small\color{muted}#4}
+  \end{tabularx}\par
 }
 
-\newcommand{\resumeProject}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#3}} \\
-        \footnotesize{\textit{#2}} & \footnotesize{#4}
-    \end{tabular*}
-    \vspace{-2.4mm}
+\newcommand{\project}[3]{%
+  \needspace{5\baselineskip}\vspace{3pt}
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{#1} & {\small\color{navy}#2}
+  \end{tabularx}\par
+  {\small\itshape\color{muted}#3}\par
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
-
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
-\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
-
-% Commands for icon sizing and positioning
-\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
-
-% Font options
-\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\pub}[4]{\item #1. \textit{#2}. \textbf{#3}.\ #4}
+\newcommand{\pubq}[4]{\item #1. \textit{#2} \textbf{#3}.\ #4}
 
 \begin{document}
-\headerfontiii
 
-% Header
-\begin{center}
-    {\Huge\textbf{Meihao Fan}}
-\end{center}
-\vspace{-6mm}
+\fontsize{10}{11.8}\selectfont
 
 \begin{center}
-    \small{
-    +86-198-0038-5890 | \href{mailto:fmh1art@ruc.edu.cn}{fmh1art@ruc.edu.cn} | 
-    \href{https://fmh1art.github.io}{fmh1art.github.io}
-    }
-\end{center}
-\vspace{-6mm}
-
-\begin{center}
-    \small{
-    \socialicon{\faGoogle} \href{https://scholar.google.com/citations?hl=en&user=BK058ZoAAAAJ}{Meihao Fan} | 
-    \socialicon{\faGithub} \href{https://github.com/fmh1art}{fmh1art} | 
-    \socialicon{\faTwitter} \href{https://x.com/fmh1art}{fmh1art}
-    }
-\end{center}
-\vspace{-6mm}
-\begin{center}
-    \small{Haidian District, Beijing 100000, China}
+  {\fontsize{25}{28}\selectfont\bfseries\color{navy}Meihao Fan}\\[3pt]
+  \href{mailto:fmh1art@ruc.edu.cn}{fmh1art@ruc.edu.cn}\quad|\quad
+  +86-198-0038-5890\quad|\quad
+  \href{https://fmh1art.github.io}{fmh1art.github.io}\\[2pt]
+  \href{https://scholar.google.com/citations?user=BK058ZoAAAAJ}{Google Scholar}\quad|\quad
+  \href{https://github.com/fmh1art}{GitHub}\quad|\quad
+  \href{https://www.linkedin.com/in/meihao-fan-49b984422}{LinkedIn}\\[4pt]
+  {\small\bfseries Scalable Data Synthesis for Agent Training}\par
+  {\small Summer 2027 U.S. Research Internship\quad|\quad Embodied AI Data, World Models \& Multimodal Agents}
 \end{center}
 
-\vspace{-4mm}
+\vspace{-5pt}
 
-\section{\textbf{Summary}}
-\vspace{1mm}
-\small{
-Ph.D. student in Computer Science at Renmin University of China, focusing on \textbf{LLM-powered data agents}, \textbf{reinforcement learning}, and \textbf{post-training for open-source LLMs}. My research centers on building \textbf{cost-effective and reliable agentic systems} for data-intensive tasks such as data preparation, entity resolution, and autonomous data science. More broadly, I am interested in developing lightweight agents with stronger \textbf{data awareness} to optimize deep research workflows, reduce expensive trial-and-error, and improve the practical efficiency of LLM-based systems.
-}
-\vspace{-2mm}
+% =========================================================
+\section{Research Summary}
 
-\section{\textbf{Education}}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
+Ph.D. student at Renmin University of China researching
+\textbf{scalable data synthesis for agent training}.
+I develop methods for \textbf{task generation, interaction-trajectory synthesis, and execution-based data verification},
+and use the resulting data for curriculum learning and multi-turn reinforcement learning.
+My work connects data construction to measurable improvements in agent capability and generalization.
+I am extending this research to \textbf{embodied data curation, action-conditioned world models, and evaluation-driven data evolution}.
 
-\resumeSubheading
-{Renmin University of China}{Beijing, China}
-{Ph.D. in Computer Application Technology}{Sept 2023 - Expected June 2028}
-\resumeItemListStart
-\item \textbf{Honors:} National Scholarship (The \textbf{only} 2nd-year Ph.D. recipient in the college)
-\item \textbf{Advisor:} Prof. Ju Fan / Prof. Xiaoyong Du
-\resumeItemListEnd
+% =========================================================
+\section{Education}
 
-\resumeSubheading
-{Chongqing Jiaotong University}{Chongqing, China}
-{B.S. in Computer Science and Technology}{Sept 2019 - June 2023}
-\resumeItemListStart
-\item \textbf{GPA:} 4.31/5.00
-\item \textbf{Honors:} National Scholarship (The \textbf{only} recipient in the college), Mingde Scholarship Nomination Award (Top 20 in the university)
-\resumeItemListEnd
+\entry{Renmin University of China}{Sept 2023 -- Expected June 2028}
+{Ph.D. in Computer Application Technology; Advisors: Prof. Ju Fan and Prof. Xiaoyong Du}
+{Beijing, China}
 
-\resumeSubHeadingListEnd
-\vspace{-6mm}
+{\small National Scholarship (2025): the college's only second-year Ph.D. recipient.}
+\par\vspace{3pt}
 
-\section{\textbf{Experience}}
-\vspace{-0.4mm}
-  \resumeSubHeadingListStart
-  \resumeSubheading
-    {{ByteDance [\href{https://www.bytedance.com}{\faIcon{globe}}]}}{Beijing, China}
-    {Research Intern (LLM Data Agent Systems)}{March 2025 - March 2026}
-    \resumeItemListStart
-      \item Led the research and development of \textbf{DeepPrep}, an \textbf{LLM-powered data agent} system for autonomous data preparation, targeting reliable and cost-effective execution in data-intensive workflows.
-      \item Proposed a \textbf{tree-based agentic reasoning} mechanism with execution-grounded feedback and non-local backtracking, improving the \textbf{reliability} and \textbf{steerability} of data agents.
-      \item Designed a \textbf{progressive post-training} framework for open-source LLMs, combining cold-start supervised fine-tuning and multi-turn \textbf{reinforcement learning} with a hybrid reward.
-      \item Built large-scale benchmarks via reversible noise injection and demonstrated that the system achieves strong performance at up to \textbf{15$\times$ lower inference cost}, highlighting its value for \textbf{cost-efficient agent systems}.
-    \resumeItemListEnd
-      
-    \resumeSubheading
-      {Renmin University of China}{Beijing, China}
-      {Research Assistant}{Sept 2023 - Present}
-      \resumeItemListStart
-        \item Led research on \textbf{AutoPrep}, a multi-agent data preparation framework that maps natural language analytical requests into executable data workflows.
-        \item Studied \textbf{cost-effective LLM inference} for entity resolution and proposed the \textbf{BATCHER} framework, balancing task quality and API cost in in-context learning.
-        \item Co-authored research on \textbf{autonomous data agents}, \textbf{text-to-SQL reasoning}, and data-centric LLM systems.
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-6mm}
+\entry{Chongqing Jiaotong University}{Sept 2019 -- June 2023}
+{B.S. in Computer Science and Technology; GPA: 4.31/5.00}
+{Chongqing, China}
 
-\section{\textbf{Projects}}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
+{\small National Scholarship (2023): the college's only recipient; Mingde Scholarship Nomination Award (university top 20).}
 
-\resumeProject
-  {DeepPrep: Data Agent System for Autonomous Data Preparation}
-  {Data Agents, Tree-based Reasoning, Post-Training, RL, Qwen}
-  {March 2025 - March 2026}
-  {{}[\href{https://anonymous.4open.science/r/DeepPrep-0432}{\textcolor{darkblue}{\faGithub}}]}
-\resumeItemListStart
-  \item Developed an execution-grounded environment supporting 31 data preparation operators, enabling agents to materialize intermediate table states and leverage runtime feedback for decision making.
-  \item Implemented a full \textbf{post-training} pipeline for open-source LLMs, covering operator syntax learning, supervised fine-tuning, and multi-turn \textbf{reinforcement learning}, with trained model weights released from 0.5B to 14B.
-\resumeItemListEnd
+% =========================================================
+\section{Research Experience}
 
-\resumeProject
-  {AutoPrep: Multi-Agent Data Preparation Framework}
-  {LLMs, Data Agents, Multi-Agent Systems}
-  {2024 - 2025}
-  {{}[\href{https://github.com/ruc-datalab/AutoPrep}{\textcolor{darkblue}{\faGithub}}]}
-\resumeItemListStart
-  \item Designed a planner agent with a Chain-of-Clauses reasoning mechanism for high-level workflow planning.
-  \item Developed programmer agents with tool-augmented code generation to translate natural language requests into executable data operations.
-\resumeItemListEnd
+\entry{EvoPhys}{Sept 2026 -- Present}
+{Research Intern, World Models}{Beijing, China}
+\begin{itemize}
+  \item Lead research on \textbf{world model training}, spanning interactive-memory evaluation, scalable multimodal data annotation, and evaluation-driven recursive self-improvement (RSI).
+\end{itemize}
 
-\resumeProject
-  {BATCHER: Cost-Effective LLM Inference for Entity Resolution}
-  {In-Context Learning, Prompt Engineering, Cost Optimization, Batch Prompting}
-  {2023 - 2024}
-  {{}[\href{https://github.com/fmh1art/BatchER}{\textcolor{darkblue}{\faGithub}}]}
-\resumeItemListStart
-  \item Introduced a batch prompting framework with demonstration selection and question batching for entity resolution.
-  \item Proposed a covering-based demonstration selection strategy, achieving \textbf{4x-7x cost savings} over standard prompting while maintaining strong matching quality.
-\resumeItemListEnd
+\entry{ByteDance}{March 2025 -- June 2026}
+{Research Intern, LLM Agent Systems \& Reinforcement Learning}{Beijing, China}
+\begin{itemize}
+  \item Led DeepPrep, covering synthetic training tasks, an executable data-preparation environment, and progressive SFT/RL; led research on agent harness self-evolution from execution trajectories.
+\end{itemize}
 
-\resumeSubHeadingListEnd
+\entry{Renmin University of China}{Sept 2023 -- March 2025}
+{Research Assistant}{Beijing, China}
+\begin{itemize}
+  \item Led AutoPrep and BATCHER research on task-aware data preparation, multi-agent orchestration, demonstration selection, and cost-efficient LLM inference.
+\end{itemize}
 
-\section{\textbf{Selected Publications} \hfill \textcolor{darkblue}{\scriptsize C=Conference Paper}}
-\vspace{0.2mm}
-\small{
-\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{C.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+% =========================================================
+\section{Selected Research Projects}
 
-\item[\textbf{[C.1]}] \textbf{Meihao Fan}, Ju Fan, Yuxin Zhang, Shaolei Zhang, Xiaoyong Du, Jie Song, Peng Li, Fuxin Jiang, Tieying Zhang, Jianjun Chen. {DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation}. \underline{VLDB 2026 [Under Review]} 
+\project{DeepAnalyze: Scalable Training-Trajectory Synthesis}{ICML 2026}
+{Project Lead\quad|\quad Synthetic data, quality filtering, curriculum learning, agentic RL}
 
-\item[\textbf{[C.2]}] \textbf{Meihao Fan}, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du. {AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework}. \underline{VLDB 2025 [Accepted]} 
+\begin{itemize}
+  \item Developed \textbf{data-grounded trajectory synthesis} for DeepAnalyze-8B, combining teacher-distilled reasoning and environment-generated interactions in the \textbf{DataScience-Instruct-500K} training corpus.
+  \item Built a \textbf{questioner--solver--inspector} pipeline: generate tasks and acceptance criteria from real data, execute multi-turn solutions, and filter trajectories using interaction checks and resulting environment changes.
+  \item Implemented a curriculum from single-skill SFT to multi-skill cold-start training and \textbf{GRPO}, using approximately 470K, 20K, and 15K samples, respectively.
+  \item Evaluated on \textbf{12 benchmarks}; achieved \textbf{38.88\% on DABStep} and \textbf{61.7\% on DS-1000}, versus 15.34\% and 54.8\% for the single-ability training variant.
+\end{itemize}
 
-\item[\textbf{[C.3]}] \textbf{Meihao Fan}, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du. {Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration}. \underline{ICDE 2024 [Accepted]} 
+\project{DeepPrep: Verifiable Task Synthesis for Agent Training}{VLDB 2026}
+{Project Lead; First Author\quad|\quad Executable supervision, reversible corruption, multi-turn RL}
 
-\item[\textbf{[C.4]}] Yuxin Zhang, \textbf{Meihao Fan}, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li. {Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards}. \underline{SIGMOD 2026 [Accepted]}
+\begin{itemize}
+  \item Designed a synthesis method that converts SQL workloads into \textbf{source tables, target specifications, and executable pipelines}; adds \textbf{reversible noise} and verifies recovery to preserve task solvability.
+  \item Constructed \textbf{6,788 training tasks}, with pipelines spanning \textbf{31 operator types} and up to \textbf{28 steps}; trained agents through operator-level SFT, verified reasoning trajectories, and GRPO with hybrid rewards.
+  \item Synthetic training data improved \textbf{out-of-domain accuracy by 37.0 percentage points} over Parrot training on Synth-Bird (Qwen3-8B, data ablation); tree-based execution supports backtracking and pipeline repair.
+\end{itemize}
 
-\item[\textbf{[C.5]}] Chao Deng, Ju Fan, Yuyu Luo, Qinliang Xue, \textbf{Meihao Fan}, Yuxin Zhang, Min Zhang, Xiaofeng Jia, Jing Zhang, Xiaoyong Du. {TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries}. \underline{VLDB 2026 [Accepted]}
+\project{Interactive Memory \& Recursive Self-Improvement (RSI) for World Models}{Ongoing}
+{Project Lead\quad|\quad World model evaluation, scalable data curation, training, self-improvement}
 
-\item[\textbf{[C.6]}] Anonymous Authors (incl. \textbf{Meihao Fan}). {DeepAnalyze: Agentic Large Language Models for Autonomous Data Science}. \underline{ICML 2026 [Under Review]}
+\begin{itemize}
+  \item Proposed an \textbf{interactive-memory benchmark for action-conditioned world models}, formalizing memory through \textbf{Encoding, Maintain, Update, and Read} and evaluating reactive response, memory persistence, and memory plasticity across temporal-retention and interference settings.
 
-\item[\textbf{[C.7]}] Anonymous Authors (incl. \textbf{Meihao Fan}). {CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?} \underline{ICML 2026 [Under Review]}
+  \item Built an automated \textbf{Isaac Sim} evaluation pipeline with programmatically generated cases and ground-truth state supervision; reproduced and evaluated \textbf{nine representative world models}, including Ctrl-World, WorldMem, iVideoGPT, HyDRA, and Oasis, under a unified evaluation protocol.
+
+  \item Built a \textbf{fully automated multimodal annotation system} for world-model training, covering atomic action segmentation, semantic and object-interaction labels, object-state changes, camera pose, and 3D hand motion; supports \textbf{100+ videos concurrently} at approximately \textbf{\$40 API cost per raw video hour}, with annotation quality validated through manual audits.
+
+  \item Developing a \textbf{Recursive Self-Improvement} pipeline linking data annotation, training-recipe construction, distributed training, evaluation, and recipe refinement; uses model weaknesses to drive hard-example mining, curriculum construction, active data selection, and data-mixture optimization.
+\end{itemize}
+
+% \newpage
+
+% =========================================================
+\section{Additional Research Projects}
+
+\project{CoDA-Bench \& TACO: Scalable, Verifiable Task Construction}{ICML / VLDB 2026}
+{Co-author\quad|\quad Task synthesis, execution verification, difficulty refinement}
+
+\begin{itemize}
+  \item \textbf{CoDA-Bench:} Co-authored a benchmark of \textbf{1,009 tasks across 31 data communities}, built from executable notebook solutions through task reconstruction, adversarial refinement, and human verification.
+  \item \textbf{TACO:} Co-authored a benchmark combining \textbf{1,500 expert-annotated} and \textbf{13,000 synthetic} NL--SQL pairs, using query-structure sampling, schema-constrained generation, and quality checks.
+\end{itemize}
+
+\project{EvoCost \& SkillAdam: Agent Self-Evolution}{ICLR 2027 submissions}
+{EvoCost: Lead, First Author\quad|\quad SkillAdam: Co-author}
+
+\begin{itemize}
+  \item \textbf{EvoCost:} Developed harness evolution that mines avoidable interactions from trajectory dependency graphs and validates updates to instructions, skills, tools, and executor logic with a fixed backbone model.
+  \item \textbf{SkillAdam:} Co-authored skill optimization with persistent issue memory and adaptive edit budgets; reduced optimization tokens by \textbf{67.3\%} versus SkillOpt on DeepPlanning, with test accuracy improving from 21.7\% to 28.3\%.
+\end{itemize}
+
+\project{AutoPrep \& BATCHER: Task-Aware Data Preparation}{VLDB 2025 / ICDE 2024}
+{Project Lead; First Author\quad|\quad Data transformation, demonstration selection, inference efficiency}
+
+\begin{itemize}
+  \item \textbf{AutoPrep:} Developed Chain-of-Clauses planning and tool-augmented execution; improved NL2SQL accuracy by \textbf{12.22 / 13.23 points} on WikiTQ / TabFact, averaged across evaluated backbones.
+  \item \textbf{BATCHER:} Developed coverage-based demonstration selection and token-aware batch allocation; batch prompting reduced API cost by \textbf{4--7$\times$} versus standard prompting across eight ER datasets.
+\end{itemize}
+
+% =========================================================
+\section{Publications}
+
+\begin{enumerate}[leftmargin=15pt,label={[\arabic*]},itemsep=3pt,topsep=1pt,parsep=0pt]
+
+\pub{\textbf{Meihao Fan}, Ju Fan, Yuxin Zhang, Shaolei Zhang, Xiaoyong Du, Jie Song, Peng Li, Fuxin Jiang, Tieying Zhang, Jianjun Chen}
+{DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation}
+{VLDB 2026}
+{\href{https://www.vldb.org/pvldb/vol19/p3371-fan.pdf}{Paper}}
+
+\pub{\textbf{Meihao Fan}, Ju Fan, Nan Tang, Lei Cao, Guoliang Li, Xiaoyong Du}
+{AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework}
+{VLDB 2025}
+{\href{https://www.vldb.org/pvldb/vol18/p3504-fan.pdf}{Paper}}
+
+\pub{\textbf{Meihao Fan}, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du}
+{Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration}
+{ICDE 2024}
+{\href{https://fmh1art.github.io/files/BatchER-ICDE2024.pdf}{Paper}}
+
+\pub{Shaolei Zhang, Ju Fan, \textbf{Meihao Fan}, Guoliang Li, Xiaoyong Du}
+{DeepAnalyze: Agentic Large Language Models for Autonomous Data Science}
+{ICML 2026}
+{\href{https://arxiv.org/abs/2510.16872}{Paper}\;|\;\href{https://github.com/ruc-datalab/DeepAnalyze}{Code}}
+
+\pub{Yuxin Zhang, \textbf{Meihao Fan}, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li}
+{Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards}
+{SIGMOD 2026}
+{\href{https://arxiv.org/abs/2505.04671}{Paper}}
+
+\pubq{Yuxin Zhang, Ju Fan, \textbf{Meihao Fan}, Shaolei Zhang, Xiaoyong Du}
+{CoDA-Bench: Can Code Agents Handle Data-Intensive Tasks?}
+{ICML 2026}
+{\href{https://arxiv.org/abs/2606.15300}{Paper}}
+
+\pub{Chao Deng, Ju Fan, Yuyu Luo, Qinliang Xue, \textbf{Meihao Fan}, Yuxin Zhang, Min Zhang, Xiaofeng Jia, Jing Zhang, Xiaoyong Du}
+{TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries}
+{VLDB 2026}
+{\href{https://arxiv.org/abs/2606.14201}{Paper}}
 
 \end{enumerate}
-}
 
-\section{\textbf{Honors and Awards}}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
-\resumeProject
-  {National Scholarship (Ph.D.)}
-  {Ministry of Education, China}
-  {2025}
-  {}
-\resumeItemListStart
-  \item Awarded to top-performing graduate students nationwide.
-  \item The \textbf{only} second-year Ph.D. student in the college to receive this prestigious award.
-\resumeItemListEnd
+% =========================================================
+\section{Manuscripts}
 
-\resumeProject
-  {National Scholarship (B.S.)}
-  {Ministry of Education, China}
-  {2023}
-  {}
-\resumeItemListStart
-  \item The \textbf{only} recipient in the college.
-\resumeItemListEnd
+\begin{enumerate}[leftmargin=18pt,label={[U\arabic*]},itemsep=3pt,topsep=1pt,parsep=0pt]
 
-\resumeProject
-  {Mingde Scholarship Nomination Award}
-  {Chongqing Jiaotong University}
-  {2023}
-  {}
-\resumeItemListStart
-  \item Awarded to the top 20 students in the entire university.
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-\vspace{-6mm}
+\pub{\textbf{Meihao Fan}, Shaolei Zhang, Ju Fan, Peng Li, Jie Song, Jianjun Chen}
+{EvoCost: Harness Self-Evolution for Cost-Efficient LLM Agents}
+{Under Review at ICLR 2027}
+{}
 
-\section{\textbf{Skills \& Research Interests}}
-\vspace{-0.4mm}
- \resumeHeadingSkillStart
-  \resumeSubItem{Research Interests:}
-    {Data Agents, Reinforcement Learning for LLM Agents, Post-Training, Cost-Efficient LLM Systems, Autonomous Data Science, Text-to-SQL}
-  \resumeSubItem{Programming \& Tools:}
-    {Python, LaTeX}
-  \resumeSubItem{LLM \& Agent Systems:}
-    {Agentic Reasoning, Multi-Agent Systems, Supervised Fine-Tuning (SFT), Multi-turn RL, Prompt Engineering, Execution-Grounded Feedback}
-  \resumeSubItem{Data Systems:}
-    {Data Preparation, Entity Resolution, Data Integration, Analytical Workflows}
- \resumeHeadingSkillEnd
+\pub{Gaoyuan Li, \textbf{Meihao Fan}, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li}
+{SkillAdam: Stable and Efficient Skill Evolution for Agents}
+{Under Review at ICLR 2027}
+{\href{https://arxiv.org/abs/2609.08944}{Preprint}\;|\;\href{https://github.com/ruc-datalab/SkillAdam}{Code}}
+
+
+\pub{Yuxin Zhang, Ju Fan, \textbf{Meihao Fan}, Shaolei Zhang, ...}
+{Multi-Agent World: Scaling Multi-Agent Orchestration Training via Recursive Environment Improvement}
+{Under Review at ICLR 2027}
+{}
+\end{enumerate}
+
+% =========================================================
+\section{Technical Skills \& Research Interests}
+
+\textbf{Data:}
+Task and trajectory synthesis, execution-based verification, quality filtering, demonstration selection.\\
+
+\textbf{Training:}
+Supervised fine-tuning, GRPO, multi-turn RL, curriculum learning, reward modeling.\\
+
+\textbf{Tools:}
+Python, PyTorch, Transformers, vLLM.\quad
+\textbf{Languages:}
+Chinese (native), English (professional).\\
+
+\textbf{Research interests:}
+Synthetic data for agents; embodied data; world models; multimodal agents; self-improving systems.
 
 \end{document}
