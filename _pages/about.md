@@ -29,9 +29,9 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ## Selected Research
 
-- **DeepAnalyze: Scalable Training-Trajectory Synthesis** (ICML 2026). Project Lead | Synthetic data, quality filtering, curriculum learning, agentic RL.
-- **DeepPrep: Verifiable Task Synthesis for Agent Training** (VLDB 2026). Project Lead; First Author | Executable supervision, reversible corruption, multi-turn RL.
-- **Interactive Memory & Recursive Self-Improvement (RSI) for World Models** (Ongoing). Project Lead | World model evaluation, scalable data curation, training, self-improvement.
+- **DeepAnalyze: Scalable Training-Trajectory Synthesis** (ICML 2026). Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL.
+- **DeepPrep: Verifiable Task Synthesis for Agent Training** (VLDB 2026). Project Lead; First Author · Executable supervision, reversible corruption, multi-turn RL.
+- **Interactive Memory & Recursive Self-Improvement (RSI) for World Models** (Ongoing). Project Lead · World model evaluation, scalable data curation, training, self-improvement.
 
 [More projects](/projects/)
 
@@ -43,7 +43,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 - **Meihao Fan**, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du. Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration **ICDE 2024**. [Paper](https://fmh1art.github.io/files/BatchER-ICDE2024.pdf) · [Slides](/files/BatchER-slides.pptx)
 
-- Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science **ICML 2026**. [Paper](https://arxiv.org/abs/2510.16872) | [Code](https://github.com/ruc-datalab/DeepAnalyze)
+- Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science **ICML 2026**. [Paper](https://arxiv.org/abs/2510.16872) · [Code](https://github.com/ruc-datalab/DeepAnalyze)
 
 - Yuxin Zhang, **Meihao Fan**, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li. Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards **SIGMOD 2026**. [Paper](https://arxiv.org/abs/2505.04671)
 
@@ -55,7 +55,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 - **Meihao Fan**, Shaolei Zhang, Ju Fan, Peng Li, Jie Song, Jianjun Chen. EvoCost: Harness Self-Evolution for Cost-Efficient LLM Agents **Under Review at ICLR 2027**.
 
-- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) | [Code](https://github.com/ruc-datalab/SkillAdam)
+- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) · [Code](https://github.com/ruc-datalab/SkillAdam)
 
 - Yuxin Zhang, Ju Fan, **Meihao Fan**, Shaolei Zhang, ... Multi-Agent World: Scaling Multi-Agent Orchestration Training via Recursive Environment Improvement **Under Review at ICLR 2027**.
 

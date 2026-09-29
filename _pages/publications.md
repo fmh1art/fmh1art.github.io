@@ -20,6 +20,6 @@ author_profile: true
 
 - **Meihao Fan**, Shaolei Zhang, Ju Fan, Peng Li, Jie Song, Jianjun Chen. EvoCost: Harness Self-Evolution for Cost-Efficient LLM Agents **Under Review at ICLR 2027**.
 
-- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) | [Code](https://github.com/ruc-datalab/SkillAdam)
+- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) · [Code](https://github.com/ruc-datalab/SkillAdam)
 
 - Yuxin Zhang, Ju Fan, **Meihao Fan**, Shaolei Zhang, ... Multi-Agent World: Scaling Multi-Agent Orchestration Training via Recursive Environment Improvement **Under Review at ICLR 2027**.

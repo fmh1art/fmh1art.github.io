@@ -37,7 +37,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ### DeepAnalyze: Scalable Training-Trajectory Synthesis
 
-**ICML 2026** · Project Lead | Synthetic data, quality filtering, curriculum learning, agentic RL
+**ICML 2026** · Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL
 
 - Developed **data-grounded trajectory synthesis** for DeepAnalyze-8B, combining teacher-distilled reasoning and environment-generated interactions in the **DataScience-Instruct-500K** training corpus.
 - Built a **questioner–solver–inspector** pipeline: generate tasks and acceptance criteria from real data, execute multi-turn solutions, and filter trajectories using interaction checks and resulting environment changes.
@@ -46,7 +46,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ### DeepPrep: Verifiable Task Synthesis for Agent Training
 
-**VLDB 2026** · Project Lead; First Author | Executable supervision, reversible corruption, multi-turn RL
+**VLDB 2026** · Project Lead; First Author · Executable supervision, reversible corruption, multi-turn RL
 
 - Designed a synthesis method that converts SQL workloads into **source tables, target specifications, and executable pipelines**; adds **reversible noise** and verifies recovery to preserve task solvability.
 - Constructed **6,788 training tasks**, with pipelines spanning **31 operator types** and up to **28 steps**; trained agents through operator-level SFT, verified reasoning trajectories, and GRPO with hybrid rewards.
@@ -54,7 +54,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ### Interactive Memory & Recursive Self-Improvement (RSI) for World Models
 
-**Ongoing** · Project Lead | World model evaluation, scalable data curation, training, self-improvement
+**Ongoing** · Project Lead · World model evaluation, scalable data curation, training, self-improvement
 
 - Proposed an **interactive-memory benchmark for action-conditioned world models**, formalizing memory through **Encoding, Maintain, Update, and Read** and evaluating reactive response, memory persistence, and memory plasticity across temporal-retention and interference settings.
 - Built an automated **Isaac Sim** evaluation pipeline with programmatically generated cases and ground-truth state supervision; reproduced and evaluated **nine representative world models**, including Ctrl-World, WorldMem, iVideoGPT, HyDRA, and Oasis, under a unified evaluation protocol.
@@ -63,21 +63,21 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ### CoDA-Bench & TACO: Scalable, Verifiable Task Construction
 
-**ICML / VLDB 2026** · Co-author | Task synthesis, execution verification, difficulty refinement
+**ICML / VLDB 2026** · Co-author · Task synthesis, execution verification, difficulty refinement
 
 - **CoDA-Bench:** Co-authored a benchmark of **1,009 tasks across 31 data communities**, built from executable notebook solutions through task reconstruction, adversarial refinement, and human verification.
 - **TACO:** Co-authored a benchmark combining **1,500 expert-annotated** and **13,000 synthetic** NL–SQL pairs, using query-structure sampling, schema-constrained generation, and quality checks.
 
 ### EvoCost & SkillAdam: Agent Self-Evolution
 
-**ICLR 2027 submissions** · EvoCost: Lead, First Author | SkillAdam: Co-author
+**ICLR 2027 submissions** · EvoCost: Lead, First Author · SkillAdam: Co-author
 
 - **EvoCost:** Developed harness evolution that mines avoidable interactions from trajectory dependency graphs and validates updates to instructions, skills, tools, and executor logic with a fixed backbone model.
 - **SkillAdam:** Co-authored skill optimization with persistent issue memory and adaptive edit budgets; reduced optimization tokens by **67.3%** versus SkillOpt on DeepPlanning, with test accuracy improving from 21.7% to 28.3%.
 
 ### AutoPrep & BATCHER: Task-Aware Data Preparation
 
-**VLDB 2025 / ICDE 2024** · Project Lead; First Author | Data transformation, demonstration selection, inference efficiency
+**VLDB 2025 / ICDE 2024** · Project Lead; First Author · Data transformation, demonstration selection, inference efficiency
 
 - **AutoPrep:** Developed Chain-of-Clauses planning and tool-augmented execution; improved NL2SQL accuracy by **12.22 / 13.23 points** on WikiTQ / TabFact, averaged across evaluated backbones.
 - **BATCHER:** Developed coverage-based demonstration selection and token-aware batch allocation; batch prompting reduced API cost by **4–7×** versus standard prompting across eight ER datasets.
@@ -90,7 +90,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 - **Meihao Fan**, Xiaoyue Han, Ju Fan, Chengliang Chai, Nan Tang, Guoliang Li, Xiaoyong Du. Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration **ICDE 2024**. [Paper](https://fmh1art.github.io/files/BatchER-ICDE2024.pdf)
 
-- Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science **ICML 2026**. [Paper](https://arxiv.org/abs/2510.16872) | [Code](https://github.com/ruc-datalab/DeepAnalyze)
+- Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science **ICML 2026**. [Paper](https://arxiv.org/abs/2510.16872) · [Code](https://github.com/ruc-datalab/DeepAnalyze)
 
 - Yuxin Zhang, **Meihao Fan**, Ju Fan, Mingyang Yi, Yuyu Luo, Jian Tan, Guoliang Li. Reward-SQL: Boosting Text-to-SQL via Stepwise Execution-Aware Reasoning and Process-Supervised Rewards **SIGMOD 2026**. [Paper](https://arxiv.org/abs/2505.04671)
 
@@ -102,7 +102,7 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 - **Meihao Fan**, Shaolei Zhang, Ju Fan, Peng Li, Jie Song, Jianjun Chen. EvoCost: Harness Self-Evolution for Cost-Efficient LLM Agents **Under Review at ICLR 2027**.
 
-- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) | [Code](https://github.com/ruc-datalab/SkillAdam)
+- Gaoyuan Li, **Meihao Fan**, Yizhe Liu, Shaolei Zhang, Ju Fan, Siyi Wang, Jiaheng Hou, Xudong Weng, Honghan Tian, Zang Li. SkillAdam: Stable and Efficient Skill Evolution for Agents **Under Review at ICLR 2027**. [Preprint](https://arxiv.org/abs/2609.08944) · [Code](https://github.com/ruc-datalab/SkillAdam)
 
 - Yuxin Zhang, Ju Fan, **Meihao Fan**, Shaolei Zhang, ... Multi-Agent World: Scaling Multi-Agent Orchestration Training via Recursive Environment Improvement **Under Review at ICLR 2027**.
 

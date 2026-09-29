@@ -13,4 +13,4 @@ Shaolei Zhang, Ju Fan, **Meihao Fan**, Guoliang Li, Xiaoyong Du
 
 **ICML 2026**
 
-[Paper](https://arxiv.org/abs/2510.16872) | [Code](https://github.com/ruc-datalab/DeepAnalyze)
+[Paper](https://arxiv.org/abs/2510.16872) · [Code](https://github.com/ruc-datalab/DeepAnalyze)

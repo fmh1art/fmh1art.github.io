@@ -1,14 +1,14 @@
 ---
 collection: projects
 title: 'DeepAnalyze: Scalable Training-Trajectory Synthesis'
-excerpt: Project Lead | Synthetic data, quality filtering, curriculum learning, agentic RL. ICML 2026.
+excerpt: Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL. ICML 2026.
 ---
 
 ## DeepAnalyze: Scalable Training-Trajectory Synthesis
 
 **ICML 2026**
 
-Project Lead | Synthetic data, quality filtering, curriculum learning, agentic RL
+Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL
 
 - Developed **data-grounded trajectory synthesis** for DeepAnalyze-8B, combining teacher-distilled reasoning and environment-generated interactions in the **DataScience-Instruct-500K** training corpus.
 - Built a **questioner–solver–inspector** pipeline: generate tasks and acceptance criteria from real data, execute multi-turn solutions, and filter trajectories using interaction checks and resulting environment changes.

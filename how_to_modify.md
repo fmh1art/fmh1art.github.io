@@ -26,6 +26,8 @@
 5. 将简历 `main.tex` 复制为 `cv.tex`，使用本地 LaTeX 工具生成 `fmh_cv.pdf`，不把私有源码上传到第三方编译服务。可用 `tectonic --outdir <临时输出目录> cv.tex`，或 `pdflatex -interaction=nonstopmode -halt-on-error -output-directory=<临时输出目录> cv.tex`。
 6. 检查 PDF 页数、文字完整性和页面渲染，确保没有模板残留、溢出或缺失字符。仅提交 PDF 和源码，不提交编译中间文件。
 7. 检查 YAML front matter、相关链接及 `git diff --check`；有 Jekyll 环境时构建一次。不要为无关的既有问题扩大修改范围。
+   - 正文与 excerpt 中的行内分隔使用 `·` 或句号，不使用裸 `|`；当前渲染器可能将其解析为表格。真实 Markdown 表格、Liquid 过滤器与 YAML 多行语法中的 `|` 不要机械替换。
+   - 检查最终 HTML：普通简介、论文与项目页面不应意外出现 `<table>`、`<th>`、`<td>`；同时核对正文、列表及链接保留，不能仅以构建成功或关键字存在判断渲染正确。
 8. 提交并推送当前 Pages 发布分支（目前为 `main`），确认远端提交和 Pages 构建成功，再检查在线页面及 PDF。
 9. 在私有维护仓库 `fmh1art/my_home` 记录来源、变更、验证与待办。
 10. 仅在推送成功且没有未保存文件后，删除本次创建的临时克隆目录。失败时保留现场。
