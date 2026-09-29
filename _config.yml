@@ -136,6 +136,7 @@ exclude:
   - LICENSE
   - README
   - how_to_modify.md
+  - THEME.md
   - cv.tex
   - Rakefile
   - assets/js/_main.js
@@ -229,7 +230,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: academic
       author_profile: true
       share: true
       comments: true
@@ -238,7 +239,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: single
+      layout: academic
       author_profile: true
       share: true
       comment: true

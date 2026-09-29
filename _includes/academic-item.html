@@ -1,0 +1,10 @@
+<article class="academic-item">
+  {% if post.venue %}<p class="item-venue">{{ post.venue | escape }}</p>{% endif %}
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  {% if post.citation %}
+    <p>{{ post.citation | split: '. "' | first | escape }}</p>
+  {% elsif post.excerpt %}
+    <div class="item-description">{{ post.excerpt | markdownify }}</div>
+  {% endif %}
+  {% if post.paperurl %}<a class="paper-link" href="{{ post.paperurl }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+</article>

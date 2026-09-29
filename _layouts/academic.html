@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Adapted from Minimal Light by Yaoyao Liu (CC0-1.0). -->
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url != '/' %}{{ page.title | strip_html | escape }} · {% endif %}{{ site.name | escape }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.name | escape }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/profile.jpg' | absolute_url }}">
+  <meta name="theme-color" content="#0c141e">
+  <script src="{{ '/assets/js/academic.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="wrapper">
+    <aside class="profile" aria-label="About Meihao Fan">
+      <a class="portrait" href="{{ '/' | relative_url }}" aria-label="Meihao Fan homepage"><img src="{{ '/images/profile.jpg' | relative_url }}" alt="Meihao Fan" width="176" height="176"></a>
+      <div class="profile-info">
+        <a class="profile-name" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+        <p class="name-zh" lang="zh">范梅浩</p>
+        <p class="position">Ph.D. Student</p>
+        <p class="affiliation">Renmin University of China</p>
+        <p class="location">Beijing, China</p>
+        <a class="email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        <div class="profile-links" aria-label="Academic profiles">
+          <a href="{{ site.author.googlescholar }}">Scholar</a>
+          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
+        </div>
+        <a class="cv-button" href="{{ '/fmh_cv.pdf' | relative_url }}">Download CV <span aria-hidden="true">↗</span></a>
+        <p class="profile-note">Data synthesis for agents.<br>World models. Embodied AI.</p>
+      </div>
+    </aside>
+    <div class="main-column">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>About</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.url contains '/publication' %} aria-current="page"{% endif %}>Publications</a>
+        <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><span aria-hidden="true">☀</span></button>
+      </nav>
+      <main id="main-content" tabindex="-1" class="{% if page.collection == 'projects' %}project-detail {% endif %}{% if page.url == '/' %}home{% else %}detail{% endif %}">
+        {% if page.url == '/' %}
+        <header class="intro-heading">
+          <p class="eyebrow">DATA · AGENTS · WORLD MODELS</p>
+          <h1>Scalable data synthesis<br><span>for agent training.</span></h1>
+        </header>
+        {% else %}
+        <header class="page-heading">
+          <p class="eyebrow">{% if page.collection == 'projects' %}RESEARCH PROJECT{% elsif page.collection == 'publications' %}PUBLICATION{% else %}MEIHAO FAN{% endif %}</p>
+          <h1>{{ page.title | escape }}</h1>
+          {% if page.venue %}<p class="venue">{{ page.venue | escape }}</p>{% endif %}
+        </header>
+        {% endif %}
+        <div class="content">{{ content }}</div>
+        {% if page.citation %}<details class="citation"><summary>Citation</summary><p>{{ page.citation | escape }}</p></details>{% endif %}
+      </main>
+      <footer class="site-footer">
+        <span>© {{ site.time | date: '%Y' }} {{ site.name }}</span>
+        <span>Built with Jekyll · <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a></span>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

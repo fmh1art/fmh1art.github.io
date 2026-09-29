@@ -17,6 +17,10 @@
 - `_config.yml`：侧栏简介、联系信息和社交链接。
 - `_data/navigation.yml`：导航，CV 当前指向 `/fmh_cv.pdf`。
 
+## 页面模板
+
+当前主页面使用本地适配的 Minimal Light 模板。布局为 `_layouts/academic.html`，样式为 `assets/css/academic.css`，列表组件为 `_includes/academic-item.html`，来源见 `THEME.md`。修改样式时检查桌面与手机宽度下的截图、横向溢出、导航、图片和链接；保留页面 URL 与现有 Markdown 资料。
+
 ## 更新与验证
 
 1. 在独立临时目录克隆主页和简历仓库，记录来源提交；读取相关说明。

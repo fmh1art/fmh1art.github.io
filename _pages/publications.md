@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: academic
 title: "Publications"
 permalink: /publications/
 author_profile: true
@@ -11,9 +11,11 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="academic-list">
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% include academic-item.html %}
 {% endfor %}
+</div>
 
 
 ## Manuscripts

@@ -1,4 +1,5 @@
 ---
+layout: academic
 permalink: /
 title: "Meihao Fan"
 excerpt: "Scalable data synthesis for agent training, embodied data, and world models"
@@ -29,9 +30,9 @@ I am seeking a **Summer 2027 U.S. research internship** in embodied AI data, wor
 
 ## Selected Research
 
-- **DeepAnalyze: Scalable Training-Trajectory Synthesis** (ICML 2026). Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL.
-- **DeepPrep: Verifiable Task Synthesis for Agent Training** (VLDB 2026). Project Lead; First Author · Executable supervision, reversible corruption, multi-turn RL.
-- **Interactive Memory & Recursive Self-Improvement (RSI) for World Models** (Ongoing). Project Lead · World model evaluation, scalable data curation, training, self-improvement.
+- **[DeepAnalyze: Scalable Training-Trajectory Synthesis](/projects/DeepAnalyze/)** (ICML 2026). Project Lead · Synthetic data, quality filtering, curriculum learning, agentic RL.
+- **[DeepPrep: Verifiable Task Synthesis for Agent Training](/projects/2026-03-01-DeepPrep/)** (VLDB 2026). Project Lead; First Author · Executable supervision, reversible corruption, multi-turn RL.
+- **[Interactive Memory & Recursive Self-Improvement (RSI) for World Models](/projects/world-models/)** (Ongoing). Project Lead · World model evaluation, scalable data curation, training, self-improvement.
 
 [More projects](/projects/)
 
